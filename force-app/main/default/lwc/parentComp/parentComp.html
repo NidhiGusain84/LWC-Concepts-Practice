@@ -1,0 +1,7 @@
+<template>
+    <lightning-card title="Parent Component">
+        <p>This text is coming form child component : {childInput}</p>
+        <lightning-input label="Enter text here" onchange={handleChange}></lightning-input>
+    </lightning-card>
+    <c-child-comp message={inputValue} onchildevent={handleChildEvent} lwc:ref="child"></c-child-comp>
+</template>
