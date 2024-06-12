@@ -1,6 +1,8 @@
 <template>
     <lightning-card title="Child Component">
         <p>I am getting this value from parent component via public property: {message}</p>  
-        <lightning-input label="Enter Text" onchange={handleChange}></lightning-input>    
+        <lightning-input label="Enter Text" onchange={handleChange}></lightning-input>   
+        <lightning-button label="Pass Value to Grand Child" onclick={clickHandler}></lightning-button> 
     </lightning-card>
+    <c-grand-child-comp lwc:ref="grandChild"></c-grand-child-comp>
 </template>

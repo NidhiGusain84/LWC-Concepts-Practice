@@ -14,4 +14,9 @@ export default class ChildComp extends LightningElement {
        });
        this.dispatchEvent(childCompEvent);
     }
+
+    clickHandler(){
+        this.refs.grandChild.userInput = this.message;
+    
+    }
 }
